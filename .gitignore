@@ -1,0 +1,81 @@
+# Docs
+docs/papers/arxiv_src
+outputs/reporting/presentations/02-next-25-07/reveal.js/dist
+
+# PDFs
+docs/01-hardware/README-hardware-main.pdf
+docs/00-reports/00-qdice/readme-qdice.pdf
+
+## PCB
+graphics/05-pngen-pcb-design2/pcb-feedback/*jpg
+graphics/05-pngen-pcb-design2/pcb-feedback/*pdf
+
+# reveal
+**.idea/
+*.iml
+*.iws
+*.eml
+**out/
+**.DS_Store
+**.svn
+**node_modules/
+**.sass-cache
+/outputs/reporting/presentations/02-next-25-07/reveal.js/*
+!/outputs/reporting/presentations/02-next-25-07/reveal.js/slides/slides.md
+!/outputs/reporting/presentations/02-next-25-07/reveal.js/index.html
+
+## general
+**_.gif
+**.png
+.vscode
+**tmp**
+**_.ipynb
+**__pycache__
+**_.md
+**_.png
+**_.svg
+**_.pdf
+**_.json
+**test-**
+**result.pdf
+**prompt.md
+**prompt-**.md
+**.tar
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+
+# Node modules
+**node_modules/
+
+# Reveal.js vendor copy (optional — if regenerable)
+**/vendor/reveal.js/
+
+
+# Logs
+**npm-debug.log*
+**yarn-debug.log*
+**yarn-error.log*
+
+
+# Output or backup
+*.bak
+*.tmp
+
+# Static server cache
+**.serve/
+
