@@ -1,0 +1,28 @@
+graph LR
+    subgraph binary["Binary Segmentation"]
+        A["<b>10000</b>"]
+        B["<b>00010</b>"]
+        C["<b>01000</b>"]
+        D["<b>00100</b>"]
+        E["<b>00000</b>"]
+    end
+    
+    subgraph labels["Location Labels"]
+        L1["Departing Point"]
+        L2["TP Delivery"]
+        L3["Delivery 2"]
+        L4["Delivery 3"]
+        L5["Delivery 4"]
+    end
+    
+    A -.-> L1
+    B -.-> L2
+    C -.-> L3
+    D -.-> L4
+    E -.-> L5
+    
+    style A fill:#fff,stroke:#000,stroke-width:2px
+    style B fill:#fff,stroke:#0066cc,stroke-width:2px
+    style C fill:#fff,stroke:#000,stroke-width:2px
+    style D fill:#fff,stroke:#0066cc,stroke-width:2px
+    style E fill:#fff,stroke:#000,stroke-width:2px

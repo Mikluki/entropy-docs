@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 423.31873 349.85031"
+   version="1.1"
+   id="svg65"
+   sodipodi:docname="pbit-magnetization-graph.svg"
+   width="423.31873"
+   height="349.85031"
+   inkscape:export-filename="pbit-magnetization-graph.png"
+   inkscape:export-xdpi="240"
+   inkscape:export-ydpi="240"
+   inkscape:version="1.4.1 (1:1.4.1+202503302257+93de688d07)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs65">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect73"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.7333"
+       steps="10"
+       helper_size="11"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="true"
+       uniform="true" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect72"
+       is_visible="true"
+       lpeversion="1"
+       pattern="M 0,0 H 1"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       hide_knot="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="rough_hatches"
+       id="path-effect71"
+       is_visible="true"
+       lpeversion="1.2"
+       direction="330,195 , 125,0"
+       dist_rdm="3;1082130430"
+       growth="0"
+       do_bend="true"
+       bender="330,200 , 5,0"
+       bottom_edge_variation="30;1862270974"
+       top_edge_variation="30;1532888933"
+       bottom_tgt_variation="0;1400897534"
+       top_tgt_variation="0;1383604726"
+       scale_bf="1"
+       scale_bb="1"
+       scale_tf="1"
+       scale_tb="1"
+       top_smth_variation="0;1400897534"
+       bottom_smth_variation="0;1867873242"
+       fat_output="true"
+       stroke_width_top="1"
+       stroke_width_bottom="1"
+       front_thickness="1"
+       back_thickness="0.3" />
+    <inkscape:path-effect
+       effect="sketch"
+       id="path-effect70"
+       is_visible="true"
+       lpeversion="1"
+       nbiter_approxstrokes="4"
+       parallel_offset="5;633710230"
+       strokelength="31.583969"
+       strokelength_rdm="0.3;1"
+       strokeoverlap="0.3"
+       strokeoverlap_rdm="0.3;1"
+       ends_tolerance="0.1;1"
+       tremble_size="5;1"
+       tremble_frequency="1"
+       nbtangents="5"
+       tgt_places_rdmness="1;465039105"
+       tgtlength="100"
+       tgtlength_rdm="0.3;1"
+       tgtscale="10" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect69"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="px"
+       mark_distance="20"
+       mark_angle="0"
+       mark_length="14"
+       minor_mark_length="7"
+       minor_mark_gap="0"
+       major_mark_gap="0"
+       major_mark_steps="5"
+       shift="0"
+       offset="0"
+       mark_dir="left"
+       border_marks="both" />
+    <rect
+       x="-40.218578"
+       y="485.24591"
+       width="153.68869"
+       height="33.434628"
+       id="rect69" />
+    <rect
+       x="20.109289"
+       y="471.25684"
+       width="207.65027"
+       height="43.27869"
+       id="rect68" />
+    <rect
+       x="84.371582"
+       y="413.11475"
+       width="231.87442"
+       height="25.63168"
+       id="rect67" />
+    <rect
+       x="92.24044"
+       y="415.30054"
+       width="180.98361"
+       height="56.393444"
+       id="rect66" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview65"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.6175068"
+     inkscape:cx="261.20447"
+     inkscape:cy="175.88798"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg65" />
+  <!-- Background -->
+  <!-- Axes -->
+  <line
+     x1="62.231651"
+     y1="5.0625"
+     x2="62.231651"
+     y2="305.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line1" />
+  <line
+     x1="62.231651"
+     y1="305.0625"
+     x2="420.25519"
+     y2="305.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line2" />
+  <!-- X-axis ticks and labels -->
+  <line
+     x1="62.231651"
+     y1="305.0625"
+     x2="62.231651"
+     y2="310.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line3" />
+  <text
+     x="60.441856"
+     y="330.0625"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     id="text3">-4</text>
+  <line
+     x1="151.73753"
+     y1="305.0625"
+     x2="151.73753"
+     y2="310.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line4" />
+  <text
+     x="150.82066"
+     y="330.0625"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     id="text4">-2</text>
+  <line
+     x1="241.24345"
+     y1="305.0625"
+     x2="241.24345"
+     y2="310.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line5" />
+  <text
+     x="241.19951"
+     y="330.0625"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     id="text5">0</text>
+  <line
+     x1="330.7493"
+     y1="305.0625"
+     x2="330.7493"
+     y2="310.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line6" />
+  <text
+     x="331.2692"
+     y="330.0625"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     id="text6">2</text>
+  <line
+     x1="420.25519"
+     y1="305.0625"
+     x2="420.25519"
+     y2="310.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line7" />
+  <text
+     x="420.10242"
+     y="330.0625"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     id="text7">4</text>
+  <!-- Y-axis ticks and labels -->
+  <line
+     x1="58.651421"
+     y1="305.0625"
+     x2="62.231651"
+     y2="305.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line8" />
+  <text
+     x="54.715385"
+     y="310.0625"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="14px"
+     id="text8">-1</text>
+  <line
+     x1="58.651421"
+     y1="205.0625"
+     x2="62.231651"
+     y2="205.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line9" />
+  <text
+     x="53.788033"
+     y="210.0625"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="14px"
+     id="text9">-0.5</text>
+  <line
+     x1="58.651421"
+     y1="155.0625"
+     x2="62.231651"
+     y2="155.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line10" />
+  <text
+     x="53.47892"
+     y="160.0625"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="14px"
+     id="text10">0</text>
+  <line
+     x1="58.651421"
+     y1="105.0625"
+     x2="62.231651"
+     y2="105.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line11" />
+  <text
+     x="55.333626"
+     y="110.0625"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="14px"
+     id="text11">0.5</text>
+  <line
+     x1="58.651421"
+     y1="5.0625"
+     x2="62.231651"
+     y2="5.0625"
+     stroke="#000000"
+     stroke-width="2"
+     id="line12" />
+  <text
+     x="55.024513"
+     y="10.0625"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="14px"
+     id="text12">1</text>
+  <!-- Axis labels -->
+  <!-- Blue vertical lines (p-bit states) -->
+  <!-- Generate programmatically - simulating many random states -->
+  <g
+     id="pbit-states"
+     stroke="#0000ff"
+     stroke-width="1.18175"
+     transform="matrix(0.71604708,0,0,1,4.9478866,-44.9375)">
+    <!-- Lines with increasing density from left to right -->
+    <line
+       x1="80"
+       y1="350"
+       x2="80"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.2"
+       id="line14" />
+    <line
+       x1="110"
+       y1="350"
+       x2="110"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.2"
+       id="line15" />
+    <line
+       x1="140"
+       y1="350"
+       x2="140"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.2"
+       id="line16" />
+    <line
+       x1="155"
+       y1="350"
+       x2="155"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.3"
+       id="line17" />
+    <line
+       x1="170"
+       y1="350"
+       x2="170"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.3"
+       id="line18" />
+    <line
+       x1="185"
+       y1="350"
+       x2="185"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.3"
+       id="line19" />
+    <line
+       x1="200"
+       y1="350"
+       x2="200"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.3"
+       id="line20" />
+    <line
+       x1="215"
+       y1="350"
+       x2="215"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.3"
+       id="line21" />
+    <line
+       x1="230"
+       y1="350"
+       x2="230"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.4"
+       id="line22" />
+    <line
+       x1="245"
+       y1="350"
+       x2="245"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.4"
+       id="line23" />
+    <line
+       x1="250"
+       y1="350"
+       x2="250"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.4"
+       id="line24" />
+    <line
+       x1="255"
+       y1="350"
+       x2="255"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.4"
+       id="line25" />
+    <line
+       x1="260"
+       y1="350"
+       x2="260"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.4"
+       id="line26" />
+    <line
+       x1="265"
+       y1="350"
+       x2="265"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.5"
+       id="line27" />
+    <line
+       x1="270"
+       y1="350"
+       x2="270"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.5"
+       id="line28" />
+    <line
+       x1="275"
+       y1="350"
+       x2="275"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.5"
+       id="line29" />
+    <line
+       x1="280"
+       y1="350"
+       x2="280"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.5"
+       id="line30" />
+    <line
+       x1="285"
+       y1="350"
+       x2="285"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.5"
+       id="line31" />
+    <line
+       x1="290"
+       y1="350"
+       x2="290"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.6"
+       id="line32" />
+    <line
+       x1="295"
+       y1="350"
+       x2="295"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.6"
+       id="line33" />
+    <line
+       x1="300"
+       y1="350"
+       x2="300"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.6"
+       id="line34" />
+    <line
+       x1="305"
+       y1="350"
+       x2="305"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.6"
+       id="line35" />
+    <line
+       x1="310"
+       y1="350"
+       x2="310"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.6"
+       id="line36" />
+    <line
+       x1="315"
+       y1="350"
+       x2="315"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line37" />
+    <line
+       x1="320"
+       y1="350"
+       x2="320"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line38" />
+    <line
+       x1="325"
+       y1="350"
+       x2="325"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line39" />
+    <line
+       x1="330"
+       y1="350"
+       x2="330"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line40" />
+    <line
+       x1="335"
+       y1="350"
+       x2="335"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line41" />
+    <line
+       x1="340"
+       y1="350"
+       x2="340"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line42" />
+    <line
+       x1="345"
+       y1="350"
+       x2="345"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line43" />
+    <line
+       x1="350"
+       y1="350"
+       x2="350"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line44" />
+    <line
+       x1="355"
+       y1="350"
+       x2="355"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line45" />
+    <line
+       x1="360"
+       y1="350"
+       x2="360"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line46" />
+    <line
+       x1="365"
+       y1="350"
+       x2="365"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.9"
+       id="line47" />
+    <line
+       x1="370"
+       y1="350"
+       x2="370"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.9"
+       id="line48" />
+    <line
+       x1="375"
+       y1="350"
+       x2="375"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.9"
+       id="line49" />
+    <line
+       x1="380"
+       y1="350"
+       x2="380"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.9"
+       id="line50" />
+    <line
+       x1="390"
+       y1="350"
+       x2="390"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.9"
+       id="line51" />
+    <line
+       x1="400"
+       y1="350"
+       x2="400"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.9"
+       id="line52" />
+    <line
+       x1="410"
+       y1="350"
+       x2="410"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line53" />
+    <line
+       x1="420"
+       y1="350"
+       x2="420"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.8"
+       id="line54" />
+    <line
+       x1="430"
+       y1="350"
+       x2="430"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line55" />
+    <line
+       x1="440"
+       y1="350"
+       x2="440"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.7"
+       id="line56" />
+    <line
+       x1="450"
+       y1="350"
+       x2="450"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.6"
+       id="line57" />
+    <line
+       x1="470"
+       y1="350"
+       x2="470"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.5"
+       id="line58" />
+    <line
+       x1="490"
+       y1="350"
+       x2="490"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.4"
+       id="line59" />
+    <line
+       x1="510"
+       y1="350"
+       x2="510"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.3"
+       id="line60" />
+    <line
+       x1="530"
+       y1="350"
+       x2="530"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.2"
+       id="line61" />
+    <line
+       x1="560"
+       y1="350"
+       x2="560"
+       y2="50"
+       stroke="#0000ff"
+       stroke-width="1.18175"
+       stroke-opacity="0.1"
+       id="line62" />
+  </g>
+  <!-- Tanh function (dotted curve) -->
+  <!-- Average m_i (red curve) -->
+  <path
+     d="m 80,350 c 11.633978,0 23.25972,-0.73021 34.84077,-1.83864 13.47099,-1.28933 26.89002,-3.13582 40.19911,-5.5849 l 1e-5,-10e-6 c 13.18523,-2.42629 26.2798,-5.42444 39.0726,-9.4346 l 1e-5,0 c 10.9002,-3.41689 21.68334,-7.48171 31.46128,-13.38775 7.41589,-4.47932 14.8119,-9.0069 21.89412,-13.99708 4.95124,-3.48869 9.72866,-7.24872 14.02679,-11.51626 4.02113,-3.99254 7.58964,-8.41889 10.92289,-13.00139 4.3795,-6.02088 8.45257,-12.2577 12.58242,-18.45248 0,0 10e-6,-1e-5 10e-6,-1e-5 2.84466,-4.26699 5.14736,-8.87227 7.26432,-13.54321 1e-5,0 1e-5,-1e-5 1e-5,-1e-5 2.58085,-5.69447 4.85987,-11.52104 7.04722,-17.37793 5.17239,-13.84967 9.84483,-27.88144 14.96827,-41.74929 5.47808,-14.82779 11.38514,-29.53026 18.67535,-43.55615 l 1e-5,-2e-5 c 6.84569,-13.17065 14.91908,-25.86355 25.43279,-36.34169 5.87804,-5.85815 11.69853,-11.775053 17.66622,-17.541845 3.48592,-3.368566 7.02683,-6.699667 10.91277,-9.597658 3.31116,-2.469348 6.90172,-4.541252 10.57819,-6.424082 5.48674,-2.809918 11.09766,-5.369209 16.66249,-8.021115 10e-6,-5e-6 2e-5,-9e-6 3e-5,-1.4e-5 8.96261,-4.271107 18.6373,-6.874685 28.38646,-8.75209 12.11427,-2.332858 24.4145,-3.565396 36.7154,-4.506445 C 512.82378,52.811409 546.45329,52.09667 580,50"
+     stroke="#e63946"
+     stroke-width="2.36352"
+     fill="none"
+     id="path63"
+     sodipodi:nodetypes="cssssc"
+     inkscape:path-effect="#path-effect72"
+     inkscape:original-d="m 80,350 c 40,0 111.58175,-9.71415 145.57378,-30.2459 C 262.1279,297.6748 265,292.78689 285,262.78689 c 20,-30 33.61688,-112.93177 73.38798,-152.56831 30.91009,-30.805523 26.69399,-27.704919 55.81967,-41.5847 C 446.75623,53.122922 500,55 580,50"
+     transform="matrix(0.71604708,0,0,1,4.9478866,-44.9375)" />
+  <!-- Legend -->
+  <!-- Legend items -->
+  <g
+     id="g65"
+     transform="translate(-151.34094,-12.137497)">
+    <rect
+       x="431.44336"
+       y="147.2"
+       width="130"
+       height="90"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-width="1"
+       id="rect63" />
+    <line
+       x1="441.44336"
+       y1="167.2"
+       x2="461.44336"
+       y2="167.2"
+       stroke="#0000ff"
+       stroke-width="1"
+       id="line63" />
+    <text
+       x="466.44336"
+       y="172.2"
+       font-family="Arial"
+       font-size="14px"
+       id="text63">m<tspan
+   font-size="10px"
+   baseline-shift="sub"
+   id="tspan63">i</tspan></text>
+    <line
+       x1="441.44336"
+       y1="192.2"
+       x2="461.44336"
+       y2="192.2"
+       stroke="#e63946"
+       stroke-width="2"
+       id="line64" />
+    <text
+       x="466.44336"
+       y="197.2"
+       font-family="Arial"
+       font-size="14px"
+       id="text64">⟨m<tspan
+   font-size="10px"
+   baseline-shift="sub"
+   id="tspan64">i</tspan>⟩</text>
+    <line
+       x1="441.44336"
+       y1="217.2"
+       x2="461.44336"
+       y2="217.2"
+       stroke="#000000"
+       stroke-width="2"
+       stroke-dasharray="3, 3"
+       id="line65" />
+    <text
+       x="466.44336"
+       y="222.2"
+       font-family="Arial"
+       font-size="14px"
+       id="text65">tanh I<tspan
+   font-size="10px"
+   baseline-shift="sub"
+   id="tspan65">i</tspan></text>
+  </g>
+  <path
+     d="m 62.231657,305.0625 c 28.64187,0 67.506463,-6.37154 92.655703,-22.13115 25.60173,-16.04316 33.57204,-24.53552 47.89299,-49.53552 14.32094,-25 34.51229,-136.14288 61.78352,-172.92349 19.8431,-26.762317 30.30712,-35.119821 43.23672,-40.245906 C 337.34972,8.511343 362.81491,9.434085 420.2552,5.0625"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     fill="none"
+     id="path62"
+     sodipodi:nodetypes="cssssc" />
+  <text
+     xml:space="preserve"
+     id="text66"
+     style="font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect66)"
+     transform="translate(-159.89758,-44.9375)"><tspan
+       x="92.240234"
+       y="507.08398"
+       id="tspan8"><tspan
+         dx="0 38.964844 24.511719 25.390625 25.351562 24.609375 15.683594 11.113281 20.996094 24.511719 15.683594 11.113281 24.472656 25.351562 12.714844 15.605469 38.964844 7.1484375 15.605469 12.714844 24.511719 25.351562 25.390625 12.714844 11.113281 25.351562 25.390625 25.351562 15.683594 12.714844 21.992188 25.351562 15.742188 15.566406 24.609375 25.351562 15.683594 12.714844 15.605469 11.796875 7.1484375 15.605469 38.964844 24.511719 25.390625 25.351562 24.609375 15.683594 11.113281 20.996094 24.511719 15.683594 11.113281 24.472656 25.351562 12.714844 15.605469 38.964844 7.1484375 15.605469 12.714844 24.511719 25.351562 25.390625 12.714844 11.113281 25.351562 25.390625 25.351562 15.683594 12.714844 21.992188 25.351562 15.742188 15.566406 24.609375 25.351562 15.683594 12.714844 15.605469 11.796875 7.1484375 15.605469 14.082031 25.390625 14.082031"
+         id="tspan7">magnetization (mᵢ) and input current (Iᵢ)magnetization (mᵢ) and input current (Iᵢ)fdfd</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     id="text67"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect67)"
+     transform="rotate(-90,-29.367793,385.74744)"><tspan
+       x="125.64062"
+       y="427.27148"
+       id="tspan9">Magnetization (mᵢ)</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text68"
+     style="font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect68)"
+     transform="translate(-159.89758,-44.9375)"><tspan
+       x="20.109375"
+       y="549.92578"
+       id="tspan11"><tspan
+         dx="0 3.7044177 8.4504986 8.4635201 8.4505005 5.22785 4.2382698 7.3307114 8.4505005 5.2473831 5.1887894 8.2031021 8.4505005 5.2278519 4.2382736 5.2018051 3.9322815 2.3828049"
+         style="font-size:13.3333px"
+         id="tspan10">input current (Iᵢ)</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     id="text69"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect69)"
+     transform="translate(129.09707,-152.88016)"
+     inkscape:export-filename="text69.png"
+     inkscape:export-xdpi="240"
+     inkscape:export-ydpi="240"><tspan
+       x="-28.06543"
+       y="499.40234"
+       id="tspan12">Input current (Iᵢ)</tspan></text>
+</svg>

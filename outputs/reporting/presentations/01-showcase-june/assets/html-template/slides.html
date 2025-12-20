@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4:3 Slideshow Prototype</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #000;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .slideshow-container {
+        position: relative;
+        width: min(100vw, calc(100vh * 4 / 3));
+        max-width: 1200px;
+        aspect-ratio: 4/3;
+        background: #333;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      }
+
+      .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .slide.active {
+        opacity: 1;
+      }
+
+      .slide-gif {
+        position: absolute;
+        max-width: 25%;
+        max-height: 25%;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .slide-counter {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 6px 10px;
+        border-radius: 10px;
+        font-size: 1.5vw;
+        z-index: 100;
+      }
+
+      /* Placeholder backgrounds for demo */
+      .slide:nth-child(1) {
+        background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .slide:nth-child(2) {
+        background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+      }
+
+      .slide:nth-child(3) {
+        background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+      }
+
+      .slide:nth-child(4) {
+        background: linear-gradient(45deg, #43e97b 0%, #38f9d7 100%);
+      }
+
+      /* Demo content styling */
+      .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .slide-content h1 {
+        font-size: 3vw;
+        margin-bottom: 1vw;
+      }
+
+      .slide-content p {
+        font-size: 1.5vw;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-content">
+          <h1>Slide 1</h1>
+          <p>Your Inkscape design would be the background</p>
+        </div>
+        <!-- Demo GIF positioned at top-right -->
+        <img
+          src="gifs/grad-cut.gif"
+          alt="grad decent"
+          class="slide-gif"
+          style="top: 15%; right: 5%; max-width: 40%; max-height: 50%"
+        />
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Slide 2</h1>
+          <p>GIFs can be positioned anywhere</p>
+        </div>
+        <!-- Demo GIF positioned at bottom-left -->
+        <img
+          src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
+          alt="Demo GIF"
+          class="slide-gif"
+          style="bottom: 10%; left: 15%"
+        />
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Slide 3</h1>
+          <p>Multiple GIFs per slide work too</p>
+        </div>
+        <!-- Multiple GIFs -->
+        <img
+          src="https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif"
+          alt="Demo GIF 1"
+          class="slide-gif"
+          style="top: 20%; left: 20%; max-width: 15%"
+        />
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Final Slide</h1>
+          <p>Perfect 4:3 ratio on any screen</p>
+        </div>
+        <!-- Centered GIF -->
+        <img
+          src="https://media.giphy.com/media/26u4lOMA8JKSnL9Uk/giphy.gif"
+          alt="Demo GIF"
+          class="slide-gif"
+          style="top: 60%; left: 50%; transform: translateX(-50%)"
+        />
+      </div>
+
+      <!-- UI Elements -->
+      <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">4</span>
+      </div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
+
+      document.getElementById("total-slides").textContent = totalSlides;
+
+      function showSlide(n) {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (n + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add("active");
+        document.getElementById("current-slide").textContent = currentSlide + 1;
+      }
+
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
+
+      function prevSlide() {
+        showSlide(currentSlide - 1);
+      }
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        switch (e.key) {
+          case "ArrowRight":
+          case " ":
+            e.preventDefault();
+            nextSlide();
+            break;
+          case "ArrowLeft":
+            e.preventDefault();
+            prevSlide();
+            break;
+          case "Home":
+            e.preventDefault();
+            showSlide(0);
+            break;
+          case "End":
+            e.preventDefault();
+            showSlide(totalSlides - 1);
+            break;
+        }
+      });
+
+      // Optional: Click to advance
+      document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("slide-gif")) {
+          nextSlide();
+        }
+      });
+    </script>
+  </body>
+</html>
