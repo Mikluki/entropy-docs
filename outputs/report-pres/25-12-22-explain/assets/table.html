@@ -1,0 +1,109 @@
+<style>
+  :root {
+    --bg: #061e25;
+
+    /* text */
+    --text-main: #d2eaf2;
+    --text-muted: rgba(210, 234, 242, 0.75);
+
+    /* table base (anchors compositing) */
+    --table-base: #081f27;
+
+    /* ultra-subtle column differentiation */
+    --col-method: rgba(255, 255, 255, 0.02);
+
+    /* strengths: cold teal, VERY dark */
+    --col-strengths: rgba(80, 160, 170, 0.08);
+
+    /* limitations: warm rose, VERY dark */
+    --col-limitations: rgba(140, 80, 120, 0.08);
+
+    /* separators */
+    --line-soft: rgba(255, 255, 255, 0.07);
+  }
+  html,
+  body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #061e25;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 1.35;
+    color: var(--text-muted);
+    background: var(--table-base);
+  }
+
+  thead th {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-main);
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    background: var(--table-base);
+  }
+
+  tbody td {
+    padding: 12px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  tbody td.col-method {
+    background: var(--col-method);
+    font-weight: 600;
+    color: var(--text-main);
+  }
+
+  tbody td.col-strengths {
+    background: var(--col-strengths);
+  }
+
+  tbody td.col-limitations {
+    background: var(--col-limitations);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Strengths</th>
+      <th>Limitations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="col-method">Simulated Annealing</td>
+      <td class="col-strengths">Simple, general-purpose, widely used.</td>
+      <td class="col-limitations">
+        Slow convergence; easily stuck in local minima.
+      </td>
+    </tr>
+    <tr>
+      <td class="col-method">Probabilistic Annealing</td>
+      <td class="col-strengths">
+        Faster sampling; hardware-accelerated; energy-efficient.
+      </td>
+      <td class="col-limitations">
+        Depends on quality and scalability of hardware.
+      </td>
+    </tr>
+    <tr>
+      <td class="col-method">Quantum Annealing</td>
+      <td class="col-strengths">
+        Can solve some hard problems more efficiently.
+      </td>
+      <td class="col-limitations">
+        Requires complex quantum hardware; limited applicability so far.
+      </td>
+    </tr>
+  </tbody>
+</table>

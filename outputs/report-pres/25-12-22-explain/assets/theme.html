@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Title color picking demo</title>
+    <style>
+      :root {
+        --bg: #061e25;
+
+        /* Base text on dark bg */
+        --body: #d6f3ff;
+
+        /* Strategy A: neutral, always readable */
+        --title-neutral: #e9fbff;
+
+        /* Strategy B: pick ONE accent from your gradients (examples) */
+        --title-accent-cyan: #67daee; /* g1 stop */
+        --title-accent-pink: #e235fc; /* g2 stop */
+        --title-accent-warm: #fbf8b1; /* g2 stop */
+
+        /* Strategy C: title is neutral, but gets a gradient underline */
+        --title-underline: linear-gradient(
+          90deg,
+          #67daee 0%,
+          #aed3f4 45%,
+          #f5ccfa 100%
+        );
+
+        --text-on-pill: #061e25; /* dark text sitting on bright gradient */
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--body);
+        font:
+          16px/1.4 system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Ubuntu,
+          Cantarell,
+          "Helvetica Neue",
+          Arial;
+      }
+
+      .wrap {
+        width: min(900px, 92vw);
+        padding: 40px 20px;
+        display: grid;
+        gap: 18px;
+      }
+
+      /* ---- Title variants ---- */
+      .title {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        margin: 0 0 8px 0;
+      }
+
+      /* A) Neutral */
+      .title.neutral {
+        color: var(--title-neutral);
+      }
+
+      /* B) Single accent color (picked from a pill gradient stop) */
+      .title.accent-cyan {
+        color: var(--title-accent-cyan);
+      }
+      .title.accent-pink {
+        color: var(--title-accent-pink);
+      }
+      .title.accent-warm {
+        color: var(--title-accent-warm);
+      }
+
+      /* C) Neutral title + gradient underline (super slide-friendly) */
+      .title.underlined {
+        color: var(--title-neutral);
+        display: inline-block;
+        padding-bottom: 10px;
+        position: relative;
+      }
+      .title.underlined::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        width: 100%;
+        height: 6px;
+        border-radius: 999px;
+        background: var(--title-underline);
+        opacity: 0.95;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+      }
+
+      /* The “gradient behind text” pill */
+      .pill {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 999px;
+        color: var(--text-on-pill);
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        box-shadow:
+          0 10px 24px rgba(0, 0, 0, 0.35),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+        user-select: none;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+      }
+
+      /* Your gradients */
+      .g1 {
+        background: linear-gradient(
+          90deg,
+          #67daee 0%,
+          #8ad6f1 25%,
+          #aed3f4 50%,
+          #d1d0f7 75%,
+          #f5ccfa 100%
+        );
+      }
+
+      .g2 {
+        background: linear-gradient(
+          90deg,
+          #e235fc 0%,
+          #e866e9 25%,
+          #ef97d6 50%,
+          #f5c8c4 75%,
+          #fbf8b1 100%
+        );
+      }
+
+      .g3 {
+        background: linear-gradient(
+          90deg,
+          #ffeecd 0%,
+          #fed6d9 25%,
+          #febee4 50%,
+          #fea5f0 75%,
+          #fd8dfb 100%
+        );
+      }
+
+      .g4 {
+        background: linear-gradient(
+          90deg,
+          #fefefc 0%,
+          #fdfee9 25%,
+          #fdfed7 50%,
+          #fdfdc4 75%,
+          #fcfdb1 100%
+        );
+      }
+
+      .g5 {
+        background: linear-gradient(
+          90deg,
+          #65daee 0%,
+          #8ad6f1 25%,
+          #aed3f4 50%,
+          #d2d0f7 75%,
+          #f6ccfa 100%
+        );
+      }
+
+      .big {
+        font-size: 28px;
+        padding: 14px 18px;
+      }
+
+      .note {
+        opacity: 0.85;
+        max-width: 70ch;
+      }
+
+      /* helper block to visually separate title styles */
+      .card {
+        padding: 16px 18px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        display: grid;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- A) Neutral -->
+      <div class="card">
+        <h2 class="title neutral">Slide title (neutral, safest)</h2>
+        <div class="row">
+          <span class="pill g1 big">Entropy → p-bits → Ising</span>
+          <span class="pill g5">Architecture: FPGA ↔ CPU</span>
+        </div>
+      </div>
+
+      <!-- B) Accent picked from a gradient stop -->
+      <div class="card">
+        <h2 class="title accent-pink">Slide title (accent from g2: #e235fc)</h2>
+        <div class="row">
+          <span class="pill g2">Arbitrage: best route (no demo yet)</span>
+          <span class="pill g3">TSP local search moves</span>
+        </div>
+      </div>
+
+      <!-- C) Neutral + gradient underline -->
+      <div class="card">
+        <h2 class="title underlined">
+          Slide title (neutral + gradient underline)
+        </h2>
+        <div class="row">
+          <span class="pill g4">Hardware calls are fast; coupling is hard</span>
+          <span class="pill g1">p-bit PCB → SoC (Zynq)</span>
+        </div>
+      </div>
+
+      <div class="note">
+        Rule of thumb: titles should be readable “at a glance from the back of
+        the room”. Use one accent per slide (max), ideally sampled from the same
+        gradient family as your key pill.
+      </div>
+    </div>
+  </body>
+</html>
